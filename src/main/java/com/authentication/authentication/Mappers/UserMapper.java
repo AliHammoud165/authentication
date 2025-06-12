@@ -1,6 +1,8 @@
-package com.authentication.authentication.user;
+package com.authentication.authentication.Mappers;
 
-import com.authentication.authentication.auth.LoginResponse;
+import com.authentication.authentication.DTOs.LoginResponse;
+import com.authentication.authentication.DTOs.UserResponse;
+import com.authentication.authentication.Entities.User;
 
 public class UserMapper {
 

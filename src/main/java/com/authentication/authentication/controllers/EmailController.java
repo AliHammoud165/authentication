@@ -1,4 +1,4 @@
-package com.authentication.authentication.email;
+package com.authentication.authentication.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.authentication.authentication.DTOs.EmailRequset;
+import com.authentication.authentication.Services.EmailService;
 
 @RestController
 @RequestMapping("/api/email")

@@ -1,4 +1,4 @@
-package com.authentication.authentication.email;
+package com.authentication.authentication.DTOs;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

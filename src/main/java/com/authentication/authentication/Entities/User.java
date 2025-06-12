@@ -1,4 +1,4 @@
-package com.authentication.authentication.user;
+package com.authentication.authentication.Entities;
 
 import java.util.Collection;
 import java.util.List;
@@ -8,6 +8,8 @@ import org.hibernate.annotations.GenericGenerator;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
+import com.authentication.authentication.Enums.Role;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

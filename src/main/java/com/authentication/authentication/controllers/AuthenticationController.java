@@ -1,4 +1,4 @@
-package com.authentication.authentication.auth;
+package com.authentication.authentication.controllers;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.http.ResponseEntity;
@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.authentication.authentication.email.CompleteRegistrationRequest;
-import com.authentication.authentication.user.UserResponse;
+import com.authentication.authentication.DTOs.AuthenticationResponse;
+import com.authentication.authentication.DTOs.CompleteRegistrationRequest;
+import com.authentication.authentication.DTOs.LoginRequest;
+import com.authentication.authentication.DTOs.LoginResponse;
+import com.authentication.authentication.DTOs.RegisterRequest;
+import com.authentication.authentication.DTOs.UserResponse;
+import com.authentication.authentication.Services.AuthenticateService;
 
 import lombok.RequiredArgsConstructor;
 

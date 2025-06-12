@@ -1,4 +1,4 @@
-package com.authentication.authentication.email;
+package com.authentication.authentication.Services;
 
 import java.util.Map;
 import java.util.Random;

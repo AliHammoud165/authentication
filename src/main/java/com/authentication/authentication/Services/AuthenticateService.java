@@ -1,4 +1,4 @@
-package com.authentication.authentication.auth;
+package com.authentication.authentication.Services;
 
 import java.time.Duration;
 import java.time.LocalDate;
@@ -16,17 +16,19 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.authentication.authentication.DTOs.AuthenticationResponse;
+import com.authentication.authentication.DTOs.CompleteRegistrationRequest;
+import com.authentication.authentication.DTOs.EmailRequset;
+import com.authentication.authentication.DTOs.EmailValidation;
+import com.authentication.authentication.DTOs.LoginRequest;
+import com.authentication.authentication.DTOs.LoginResponse;
+import com.authentication.authentication.DTOs.RegisterRequest;
+import com.authentication.authentication.DTOs.UserResponse;
+import com.authentication.authentication.Entities.User;
+import com.authentication.authentication.Mappers.UserMapper;
+import com.authentication.authentication.Repositories.EmailValidationRepository;
+import com.authentication.authentication.Repositories.UserRepository;
 import com.authentication.authentication.config.JwtService;
-import com.authentication.authentication.email.CompleteRegistrationRequest;
-import com.authentication.authentication.email.EmailGeneratingService;
-import com.authentication.authentication.email.EmailRequset;
-import com.authentication.authentication.email.EmailService;
-import com.authentication.authentication.email.EmailValidation;
-import com.authentication.authentication.email.EmailValidationRepository;
-import com.authentication.authentication.user.User;
-import com.authentication.authentication.user.UserMapper;
-import com.authentication.authentication.user.UserRepository;
-import com.authentication.authentication.user.UserResponse;
 
 import lombok.RequiredArgsConstructor;
 

@@ -1,6 +1,4 @@
-package com.authentication.authentication.email;
-
-import com.authentication.authentication.auth.RegisterRequest;
+package com.authentication.authentication.DTOs;
 
 public class CompleteRegistrationRequest extends RegisterRequest {
     private Integer code;

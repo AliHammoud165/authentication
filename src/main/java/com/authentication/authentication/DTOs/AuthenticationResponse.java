@@ -1,4 +1,4 @@
-package com.authentication.authentication.auth;
+package com.authentication.authentication.DTOs;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

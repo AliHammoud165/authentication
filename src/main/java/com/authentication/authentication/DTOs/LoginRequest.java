@@ -1,18 +1,15 @@
-package com.authentication.authentication.user;
+package com.authentication.authentication.DTOs;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserResponse {
+public class LoginRequest {
     private String email;
-    private String phone_number;
-    private String full_name;
-    private String role;
-
+    private String password;
 }

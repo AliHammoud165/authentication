@@ -1,6 +1,6 @@
-package com.authentication.authentication.auth;
+package com.authentication.authentication.DTOs;
 
-import com.authentication.authentication.user.Role;
+import com.authentication.authentication.Enums.Role;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package com.authentication.authentication.email;
+package com.authentication.authentication.DTOs;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
