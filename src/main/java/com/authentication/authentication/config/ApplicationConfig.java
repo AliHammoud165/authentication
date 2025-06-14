@@ -22,8 +22,12 @@ public class ApplicationConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        return userEmail -> repository.findByEmail(userEmail)
-                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+        return username -> {
+            System.out.println("Trying to authenticate with username: " + username);
+            return repository.findByusername(username)
+                    .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+        };
+
     }
 
     @SuppressWarnings("deprecation")

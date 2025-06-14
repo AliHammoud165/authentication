@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class LoginResponse {
     private String token;
+    private String username;
     private String first_name;
     private String last_name;
     private String email;

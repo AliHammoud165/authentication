@@ -5,7 +5,7 @@ import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.authentication.authentication.DTOs.EmailValidation;
+import com.authentication.authentication.Entities.EmailValidation;
 
 public interface EmailValidationRepository extends JpaRepository<EmailValidation, UUID> {
 

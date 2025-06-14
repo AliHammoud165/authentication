@@ -10,6 +10,7 @@ public class UserMapper {
         return LoginResponse.builder()
                 .first_name(user.getFirst_name())
                 .last_name(user.getLast_name())
+                .username(user.getUsername())
                 .email(user.getEmail())
                 .phone_number(user.getPhonenumber())
                 .role(user.getRole())
@@ -23,6 +24,7 @@ public class UserMapper {
         response.setPhone_number(user.getPhonenumber());
         response.setFull_name(user.getFirst_name() + " " + user.getLast_name());
         response.setRole(user.getRole().name());
+        response.setUsername(user.getUsername());
         return response;
     }
 }
